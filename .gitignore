@@ -34,4 +34,4 @@ Gemfile.lock
 # Ignore test and documentation files
 /_tests/
 /docs/
-*.md
+# *.md
