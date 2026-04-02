@@ -31,7 +31,7 @@
 
                 
               <p>I am a dual-degree master's student at <a href="http://en.sjtu.edu.cn"> Shanghai Jiao Tong University (SJTU)</a> and <a href="https://www.telecom-paris.fr"> Télécom Paris</a>, advised by <a href="https://chenxie95.github.io"> Prof. Xie Chen</a> from <a href="https://x-lance.github.io">X-LANCE Lab, SJTU </a>and <a href="https://slimessid.github.io/research/"> Prof. Slim Essid</a> from <a href="https://adasp.telecom-paris.fr">ADASP Group, Télécom Paris.</a>
-              </a> Currently, I'm interning at <a href="https://seed.bytedance.com/en/">Bytedance Seed</a>, working on multimodal understanding and generation. 
+               Currently, I'm interning at <a href="https://seed.bytedance.com/en/">Bytedance Seed</a>, working on multimodal understanding and generation. 
               </p>
               <p>Previously, I received my Bachelor's degree from <a href="http://en.sjtu.edu.cn"> Shanghai Jiao Tong University</a> in 2024. During that summer, I was a research assisstant at <a href="https://www.cuhk.edu.hk/chinese/index.html">The Chinese Univeristy of Hong Kong (CUHK)</a>, working with <a href="https://qiuqiangkong.github.io">Prof. Qiuqiang Kong</a> at the <a href="http://dsp.ee.cuhk.edu.hk"> DSP Lab, CUHK.</a>
                  I have also interned at <a href="https://hunyuan.tencent.com/">Tencent Hunyuan Team</a>. 
@@ -44,7 +44,7 @@
                 Links: &nbsp
                 <a href="mailto:xiquan.li@telecom-paris.fr"><i class="fas fa-envelope"></i> Email</a> &nbsp/&nbsp
                 <a href="https://scholar.google.com/citations?user=cRDM0lIAAAAJ&hl=en"><i class="fas fa-graduation-cap"></i> Google Scholar</a> &nbsp/&nbsp
-                <a href="data/CV_Xiquan_Li_EN.pdf"><i class="fas fa-file-pdf"></i> CV</a> &nbsp/&nbsp
+                <!-- <a href="data/CV_Xiquan_Li_EN.pdf"><i class="fas fa-file-pdf"></i> CV</a> &nbsp/&nbsp -->
                 <a href="https://github.com/xiquan-li"><i class="fab fa-github"></i> GitHub</a> &nbsp/&nbsp
                 <a href="https://www.linkedin.com/in/xiquan-li-7562ba290/?originalSubdomain=fr"><i class="fab fa-linkedin"></i> LinkedIn</a>
               <!-- </p> -->
@@ -76,13 +76,12 @@
         <!-- ## -->
 
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
-          <tr>
+          <tr></tr>
             <td style="padding:20px;width:100%;vertical-align:middle">
               <heading>Selected Publications</heading>
               <!-- (* equal contribution) -->
             </td>
           </tr>
-          <tr>
         </tbody></table>
 
         <style>
@@ -116,7 +115,7 @@
               <br>
               <b>Xiquan Li</b>, Junxi Liu, Wenxi Chen, Haina Zhu, Ziyang Ma, Xie Chen
               <br>
-              arXiv, &nbsp;2025 &nbsp;
+              arXiv, &nbsp;2026 &nbsp;
               <br>
               <a href="https://arxiv.org/abs/2603.11661v1" style="text-decoration: none;">
                 Paper
@@ -136,6 +135,49 @@
 
               <font color='gray'>
                   Reinforcement Learning (RL) has become an effective paradigm for enhancing Large Language Models (LLMs) and visual generative models. However, its application in text-to-audio (TTA) generation remains largely under-explored. Prior work typically employs offline methods like Direct Preference Optimization (DPO) and leverages Contrastive Language-Audio Pretraining (CLAP) models as reward functions. In this study, we investigate the integration of online Group Relative Policy Optimization (GRPO) into TTA generation. We adapt the algorithm for Flow Matching-based audio models and demonstrate that online RL significantly outperforms its offline counterparts. Furthermore, we incorporate rewards derived from Large Audio Language Models (LALMs), which can provide fine-grained scoring signals that are better aligned with human perception. With only 470M parameters, our final model, \textbf{Resonate}, establishes a new SOTA on TTA-Bench in terms of both audio quality and semantic alignment.
+              </font>
+            </td>
+          </tr>
+        </tbody></table>
+
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr>
+            <!-- <td style="padding:0px 0px 20px 20px;width:100px;vertical-align:middle">
+              <img src="images/urobench.png" alt="urobench" style="width:175px;height:auto;border-radius:5px;">
+            </td> -->
+
+            <!--padding: 上 右 下 左-->
+            <!-- <td style="padding:0px 0px 20px 40px;width:100%;vertical-align:middle", class="publication-item"> -->
+
+              <td style="padding:0px 0px 20px 20px;width:100%;vertical-align:middle">
+              <a href="https://arxiv.org/abs/2604.01155" id="FineLAP">
+                <papertitle>FineLAP: Taming Heterogeneous Supervision for Fine-grained Language-Audio Pretraining</papertitle>
+              </a>
+              <br>
+              <b>Xiquan Li</b>, Xuenan Xu, Ziyang Ma, Wenxi Chen, Haolin He, Qiuqiang Kong, Xie Chen
+
+              <br>
+              arXiv, &nbsp;2026 &nbsp;
+              <br>
+              <a href="https://arxiv.org/abs/2604.01155" style="text-decoration: none;">
+                Paper
+                <!-- <i class="fas fa-file-pdf" style="font-size: 1.2em; color: #d9534f;"></i> Paper -->
+              </a>
+              &nbsp;/&nbsp;
+              <a href="https://github.com/xiquan-li/FineLAP" style="text-decoration: none;">
+                Code
+                <!-- <i class="fab fa-github" style="font-size: 1.2em; color: #333;"></i> Code -->
+              </a>
+              &nbsp;/&nbsp;
+              <a href="https://huggingface.co/datasets/AndreasXi/FineLAP-100k" style="text-decoration: none;">
+                Dataset
+                <!-- <i class="fab fa-github" style="font-size: 1.2em; color: #333;"></i> Code -->
+              </a>
+              <br>
+
+              <font color='gray'>
+                    Contrastively pretrained audio-language models (e.g., CLAP) excel at clip-level understanding but struggle with frame-level tasks. Existing extensions fail to exploit the varying granularity of real-world audio-text data, where massive clip-level textual descriptions coexist with limited frame-level annotations. This paper proposes Fine-grained Language-Audio Pretraining (FineLAP), a novel training paradigm that advances both clip- and frame-level alignment in CLAP with heterogeneous data. FineLAP introduces a dual-stream sigmoid loss with a cluster-based sampling strategy to jointly learn from clip- and frame-level supervision. To capture both global semantics and local details, FineLAP uses a decoupled audio projector on top of a self-supervised encoder. To alleviate the scarcity of temporally annotated data, we present FineLAP-100k, a large-scale synthetic SED dataset constructed through a scalable curation pipeline. Extensive experiments demonstrate that FineLAP achieves SOTA performance across multiple audio understanding tasks, including retrieval, classification, sound event detection, and text-to-audio grounding. Ablation studies further show that coarse- and fine-grained alignment are mutually beneficial, providing insights for building better audio-language models (ALMs).
               </font>
             </td>
           </tr>
@@ -193,7 +235,7 @@
             <!-- <td style="padding:0px 0px 20px 40px;width:100%;vertical-align:middle", class="publication-item"> -->
 
               <td style="padding:0px 0px 20px 20px;width:100%;vertical-align:middle">
-              <a href="https://arxiv.org/abs/2505.19294" id="URO-Bench">
+              <a href="https://arxiv.org/abs/2505.19294" id="Reliable LALM">
                 <papertitle>Towards Reliable Large Audio Language Model</papertitle>
               </a>
               <br>
@@ -212,7 +254,7 @@
           </tr>
         </tbody></table>
 
-        <!-- <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           <tr>
 
               <td style="padding:0px 0px 20px 20px;width:100%;vertical-align:middle">
@@ -222,7 +264,7 @@
               <br>
               Ruiqi Yan, <b>Xiquan Li</b>, Wenxi Chen, Zhikang Niu, Chen Yang, Ziyang Ma, Kai Yu, Xie Chen
               <br>
-              arXiv, &nbsp;2025&nbsp;
+              EMNLP, &nbsp;2025 (Findings) &nbsp;
               <br>
               <a href="https://arxiv.org/abs/2502.17810" style="text-decoration: none;">
                 Paper
@@ -240,43 +282,8 @@
               <font color='gray'>In recent years, with advances in large language models (LLMs), end-to-end spoken dialogue models (SDMs) have made significant strides. Compared to text-based LLMs, the evaluation of SDMs needs to take speech-related aspects into account, such as paralinguistic information and speech quality. However, there is still a lack of comprehensive evaluations for SDMs in speech-to-speech (S2S) scenarios. To address this gap, we propose URO-Bench, an extensive benchmark for SDMs. Notably, URO-Bench is the first S2S benchmark that covers evaluations about multilingualism, multi-round dialogues, and paralinguistics. Our benchmark is divided into two difficulty levels: basic track and pro track, consisting of 16 and 20 datasets respectively, evaluating the model's abilities in Understanding, Reasoning, and Oral conversation. Evaluations on our proposed benchmark reveal that current open-source SDMs perform rather well in daily QA tasks, but lag behind their backbone LLMs in terms of instruction-following ability and also suffer from catastrophic forgetting. Their performance in advanced evaluations of paralinguistic information and audio understanding remains subpar, highlighting the need for further research in this direction. We hope that URO-Bench can effectively facilitate the development of spoken dialogue models by providing a multifaceted evaluation of existing models and helping to track progress in this area. </font>
             </td>
           </tr>
-        </tbody></table> -->
-
-        <!-- <br> -->
-
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr>
-            <!-- <td style="padding:0px 0px 20px 40px;width:100px;vertical-align:middle">
-              <img src="images/slam-omni.png" alt="slam-omni" style="width:175px;height:auto;border-radius:5px;">
-            </td> -->
-            <!-- <td style="padding:0px 0px 20px 40px;width:100%;vertical-align:middle", class="publication-item"> -->
-              <td style="padding:0px 0px 20px 20px;width:100%;vertical-align:middle">
-              <a href="https://arxiv.org/abs/2412.15649" id="SLAM-Omni">
-                <papertitle>SLAM-Omni: Timbre-Controllable Voice Interaction System with Single-Stage Training</papertitle>
-              </a>
-              <br>
-              Wenxi Chen, Ziyang Ma, Ruiqi Yan, Yuzhe Liang, <b>Xiquan Li</b>, Ruiyang Xu, Zhikang Niu,
-              Yanqiao Zhu, Yifan Yang, Zhanxun Liu, Kai Yu, Yuxuan Hu, Jinyu Li, Yan Lu, Shujie Liu, Xie Chen
-              <br>
-              ACL, &nbsp;2025 (Findings)&nbsp;
-              <br>
-              <a href="https://arxiv.org/abs/2412.15649" style="text-decoration: none;">
-                Paper
-                <!-- <i class="fas fa-file-pdf" style="font-size: 1.2em; color: #d9534f;"></i> Paper -->
-              </a>
-              &nbsp;/&nbsp;
-              <a href="https://github.com/X-LANCE/SLAM-LLM/blob/main/examples/s2s/README.md" style="text-decoration: none;">
-                Code
-                <!-- <i class="fab fa-github" style="font-size: 1.2em; color: #333;"></i> Code -->
-              </a>
-
-              <br>
-              <font color="gray">Recent advancements highlight the potential of end-to-end real-time spoken dialogue systems, showcasing their low latency and high quality. In this paper, we introduce SLAM-Omni, a timbre-controllable, end-to-end voice interaction system with single-stage training. SLAM-Omni achieves zero-shot timbre control by modeling spoken language with semantic tokens and decoupling speaker information to a vocoder. By predicting grouped speech semantic tokens at each step, our method significantly reduces the sequence length of audio tokens, accelerating both training and inference. Additionally, we propose historical text prompting to compress dialogue history, facilitating efficient multi-round interactions. Comprehensive evaluations reveal that SLAM-Omni outperforms prior models of similar scale, requiring only 15 hours of training on 4 GPUs with limited data. Notably, it is the first spoken dialogue system to achieve competitive performance with a single-stage training approach, eliminating the need for pre-training on TTS or ASR tasks. Further experiments validate its multilingual and multi-turn dialogue capabilities on larger datasets.</font>
-            </td>
-          </tr>
         </tbody></table>
 
-        <!-- <br> -->
 
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           <tr>
@@ -285,7 +292,7 @@
             </td> -->
             <!-- <td style="padding:0px 0px 20px 40px;width:100%;vertical-align:middle", class="publication-item"> -->
               <td style="padding:0px 0px 20px 20px;width:100%;vertical-align:middle">
-              <a href="https://arxiv.org/abs/2410.09472" id="SLAM-Omni">
+              <a href="https://arxiv.org/abs/2410.09472" id="DRCap">
                 <papertitle>DRCap: Decoding CLAP Latents with Retrieval-Augmented Generation for Zero-shot Audio Captioning
                 </papertitle>
               </a>
@@ -312,7 +319,7 @@
         <!-- <br> -->
 
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr>
+          <tr></tr>
             <!-- <td style="padding:0px 0px 20px 20px;width:100px;vertical-align:middle">
               <img src="images/slam-aac.png" alt="slam-aac" style="width:175px;height:auto;border-radius:5px;">
             </td> -->
@@ -344,45 +351,6 @@
 
         <!-- <br> -->
 
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr>
-            <!-- <td style="padding:0px 0px 20px 20px;width:100px;vertical-align:middle">
-              <img src="images/emobox.png" alt="emobox" style="width:175px;height:auto;border-radius:5px;"> 
-            </td> -->
-            <!-- <td style="padding:0px 0px 20px 40px;width:100%;vertical-align:middle", class="publication-item"> -->
-              <td style="padding:0px 0px 20px 20px;width:100%;vertical-align:middle">
-              <a href="https://arxiv.org/abs/2406.07162" id="EmoBox">
-                <papertitle>EmoBox: Multilingual Multi-corpus Speech Emotion Recognition Toolkit and Benchmark
-                </papertitle>
-              </a>
-              <br>
-              Ziyang Ma, Mingjie Chen, Hezhao Zhang, Zhisheng Zheng, Wenxi Chen, <b>Xiquan Li</b>, Jiaxin Ye, Xie Chen, Thomas Hain
-              <br>
-              Interspeech, &nbsp;2024&nbsp; <font color='red'>(Oral)</font>
-              <br>
-              <a href="https://arxiv.org/abs/2406.07162" style="text-decoration: none;">
-                Paper
-                <!-- <i class="fas fa-file-pdf" style="font-size: 1.2em; color: #d9534f;"></i> Paper -->
-              </a>
-              &nbsp;/&nbsp;
-              <a href="https://github.com/emo-box/EmoBox" style="text-decoration: none;">
-                Code
-                <!-- <i class="fab fa-github" style="font-size: 1.2em; color: #333;"></i> Code -->
-              </a>
-              &nbsp;/&nbsp;
-              <a href="https://emo-box.github.io" style="text-decoration: none;">
-                Project Page
-                <!-- <i class="fas fa-globe" style="font-size: 1.2em; color: #0073e6;"></i> Project Page -->
-              </a>
-              <br>
-              <font color="gray">Speech emotion recognition (SER) is an important part of human-computer interaction, receiving extensive attention from both industry and academia. However, the current research field of SER has long suffered from the following problems: 1) There are few reasonable and universal splits of the datasets, making comparing different models and methods difficult. 2) No commonly used benchmark covers numerous corpus and languages for researchers to refer to, making reproduction a burden. In this paper, we propose EmoBox, an out-of-the-box multilingual multi-corpus speech emotion recognition toolkit, along with a benchmark for both intra-corpus and cross-corpus settings. For intra-corpus settings, we carefully designed the data partitioning for different datasets. For cross-corpus settings, we employ a foundation SER model, emotion2vec, to mitigate annotation errors and obtain a test set that is fully balanced in speakers and emotions distributions. Based on EmoBox, we present the intra-corpus SER results of 10 pre-trained speech models on 32 emotion datasets with 14 languages, and the cross-corpus SER results on 4 datasets with the fully balanced test sets. To the best of our knowledge, this is the largest SER benchmark, across language scopes and quantity scales. We hope that our toolkit and benchmark can facilitate the research of SER in the community.</font>
-            </td>
-          </tr>
-        </tbody></table>
-
-
-
-
 
         <!-- ## -->
         <!-- Education -->
@@ -394,7 +362,6 @@
               <heading>Education</heading>
             </td>
           </tr>
-          <tr>
         </tbody></table>
 
 
@@ -404,7 +371,7 @@
               <b>Shanghai Jiao Tong University</b>, Shanghai, China
               <br>
               M.E. in Information Engineering • Sep. 2024 &ndash; March. 2027
-              </br>
+              <br>
             </td>
             <td style="padding:0px 0px 0px 20px;width:10%;vertical-align:middle"><img src="images/sjtu-logo.png" width="75" height="75"></td>
           </tr>
@@ -417,7 +384,7 @@
               <b>Télécom Paris</b>, Palaiseau, France
               <br>
               M.E. in Information Engineering • Sep. 2023 &ndash; Jun. 2026
-              </br>
+              <br>
             </td>
             <td style="padding:0px 0px 0px 20px;width:10%;vertical-align:middle"><img src="images/telecom_paristech.jpg" width="75" height=auto></td>
           </tr>
@@ -430,7 +397,7 @@
               <b>Shanghai Jiao Tong University</b>, Shanghai, China
               <br>
               B.E. in Information Engineering, Dual degree in French • Sep. 2020 &ndash; Jun. 2024
-              </br>
+              <br>
             </td>
             <td style="padding:0px 0px 0px 20px;width:10%;vertical-align:middle"><img src="images/sjtu-logo.png" width="75" height="75"></td>
           </tr>
@@ -445,12 +412,11 @@
         <!-- ## -->
 
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
-          <tr>
+          <tr></tr>
             <td style="padding:20px;width:100%;vertical-align:middle">
               <heading>Experiences</heading>
             </td>
           </tr>
-          <tr>
         </tbody></table>
         
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
@@ -459,7 +425,7 @@
               <a href="https://seed.bytedance.com/en/"> Seed Speech Group</a>, <b>Bytedance</b>, Shanghai, China
               <br>
               Intern • November 2025 &ndash; Now
-              </br>
+              <br>
             </td>
             <td style="padding:0px 0px 0px 20px;width:10%;vertical-align:middle"><img src="images/bytedance_woWord.png" width="75" height=auto></td>
           </tr>
@@ -472,7 +438,7 @@
               <a href="https://hunyuan.tencent.com/"> Hunyuan Team</a>, <b>Tencent</b>, Shanghai, China
               <br>
               Intern • June 2025 &ndash; November 2025
-              </br>
+              <br>
             </td>
             <td style="padding:0px 0px 0px 20px;width:10%;vertical-align:middle"><img src="images/hunyuan.png" width="75" height=auto></td>
           </tr>
@@ -487,7 +453,7 @@
               Research Intern • Sep. 2024 &ndash; June. 2025
               <br>
               Advisor: <a href="https://slimessid.github.io/research/"> Slim Essid</a>
-              </br>
+              <br>
             </td>
             <td style="padding:0px 0px 0px 20px;width:10%;vertical-align:middle"><img src="images/telecom_paristech.jpg" width="75" height=auto></td>
           </tr>
@@ -501,7 +467,7 @@
               Research Assisstant • June. 2024 &ndash; Sep. 2024
               <br>
               Advisor: <a href="https://scholar.google.com/citations?user=B6O3SycAAAAJ&hl=en&oi=ao"> Qiuqiang Kong </a> 
-              </br>
+              <br>
             </td>
             <td style="padding:0px 0px 0px 20px;width:10%;vertical-align:middle"><img src="images/CUHK_Logo.png" width="75" height=auto></td>
           </tr>
@@ -515,7 +481,7 @@
               Research Intern • Jan. 2023 &ndash; Now
               <br>
               Advisor: <a href="https://chenxie95.github.io"> Xie Chen</a>
-              </br>
+              <br>
             </td>
             <td style="padding:0px 0px 0px 20px;width:10%;vertical-align:middle"><img src="images/sjtu-logo.png" width="75" height="75"></td>
           </tr>
@@ -550,7 +516,7 @@
                     <br>
                     <br>
                     </p><div style="float:left;">
-                        Updated at March. 2026
+                        Updated at April. 2026
                     </div>
                     <div style="float:right;">
                         Thanks <a href="https://jonbarron.info">Jon Barron</a> for this amazing template
