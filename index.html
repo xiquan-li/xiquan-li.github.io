@@ -228,6 +228,37 @@
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           <tr>
             <!-- <td style="padding:0px 0px 20px 20px;width:100px;vertical-align:middle">
+              <img src="images/drcap.png" alt="drcap" style="width:175px;height:auto;border-radius:5px;">
+            </td> -->
+            <!-- <td style="padding:0px 0px 20px 40px;width:100%;vertical-align:middle", class="publication-item"> -->
+              <td style="padding:0px 0px 20px 20px;width:100%;vertical-align:middle">
+              <a href="https://arxiv.org/abs/2410.09472" id="DRCap">
+                <papertitle>DRCap: Decoding CLAP Latents with Retrieval-Augmented Generation for Zero-shot Audio Captioning
+                </papertitle>
+              </a>
+              <br>
+              <b>Xiquan Li</b>, Wenxi Chen, Ziyang Ma, Xuenan Xu, Yuzhe Liang, Zhisheng Zheng, Qiuqiang Kong, Xie Chen
+              <br>
+              ICASSP, &nbsp;2025&nbsp; <font color='red'>(Oral)</font>
+              <br>
+              <a href="https://arxiv.org/abs/2410.09472" style="text-decoration: none;">
+                Paper
+                <!-- <i class="fas fa-file-pdf" style="font-size: 1.2em; color: #d9534f;"></i> Paper -->
+              </a>
+              &nbsp;/&nbsp;
+              <a href="https://github.com/X-LANCE/SLAM-LLM/tree/main/examples/drcap_zeroshot_aac" style="text-decoration: none;">
+                Code
+                <!-- <i class="fab fa-github" style="font-size: 1.2em; color: #333;"></i> Code -->
+              </a>
+              <br>
+              <font color="gray">While automated audio captioning (AAC) has made notable progress, traditional fully supervised AAC models still face two critical challenges: the need for expensive audio-text pair data for training and performance degradation when transferring across domains. To overcome these limitations, we present DRCap, a data-efficient and flexible zero- shot audio captioning system that requires text-only data for training and can quickly adapt to new domains without additional fine-tuning. DRCap integrates a contrastive language-audio pre-training (CLAP) model and a large language model (LLM) as its backbone. During training, the model predicts the ground-truth caption with a fixed text encoder from CLAP, whereas, during inference, the text encoder is replaced with the audio encoder to generate captions for audio clips in a zero-shot manner. To mitigate the modality gap of the CLAP model, we use both the projection strategy from the encoder side and the retrieval-augmented generation strategy from the decoder side. Specifically, audio embeddings are first projected onto a text embedding support to absorb extensive semantic information within the joint multi-modal space of CLAP. At the same time, similar captions retrieved from a datastore are fed as prompts to instruct the LLM, incorporating external knowledge to take full advantage of its strong generative capability. Conditioned on both the projected CLAP embedding and the retrieved similar captions, the model is able to produce a more accurate and semantically rich textual description. By tailoring the text embedding support and the caption datastore to the target domain, DRCap acquires a robust ability to adapt to new domains in a training-free manner. Experimental results demonstrate that DRCap outperforms all other zero-shot models in in- domain scenarios and achieves state-of-the-art performance in cross- domain scenarios.</font>
+            </td>
+          </tr>
+        </tbody></table>
+        
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr>
+            <!-- <td style="padding:0px 0px 20px 20px;width:100px;vertical-align:middle">
               <img src="images/urobench.png" alt="urobench" style="width:175px;height:auto;border-radius:5px;">
             </td> -->
 
@@ -284,37 +315,6 @@
           </tr>
         </tbody></table>
 
-
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr>
-            <!-- <td style="padding:0px 0px 20px 20px;width:100px;vertical-align:middle">
-              <img src="images/drcap.png" alt="drcap" style="width:175px;height:auto;border-radius:5px;">
-            </td> -->
-            <!-- <td style="padding:0px 0px 20px 40px;width:100%;vertical-align:middle", class="publication-item"> -->
-              <td style="padding:0px 0px 20px 20px;width:100%;vertical-align:middle">
-              <a href="https://arxiv.org/abs/2410.09472" id="DRCap">
-                <papertitle>DRCap: Decoding CLAP Latents with Retrieval-Augmented Generation for Zero-shot Audio Captioning
-                </papertitle>
-              </a>
-              <br>
-              <b>Xiquan Li</b>, Wenxi Chen, Ziyang Ma, Xuenan Xu, Yuzhe Liang, Zhisheng Zheng, Qiuqiang Kong, Xie Chen
-              <br>
-              ICASSP, &nbsp;2025&nbsp; <font color='red'>(Oral)</font>
-              <br>
-              <a href="https://arxiv.org/abs/2410.09472" style="text-decoration: none;">
-                Paper
-                <!-- <i class="fas fa-file-pdf" style="font-size: 1.2em; color: #d9534f;"></i> Paper -->
-              </a>
-              &nbsp;/&nbsp;
-              <a href="https://github.com/X-LANCE/SLAM-LLM/tree/main/examples/drcap_zeroshot_aac" style="text-decoration: none;">
-                Code
-                <!-- <i class="fab fa-github" style="font-size: 1.2em; color: #333;"></i> Code -->
-              </a>
-              <br>
-              <font color="gray">While automated audio captioning (AAC) has made notable progress, traditional fully supervised AAC models still face two critical challenges: the need for expensive audio-text pair data for training and performance degradation when transferring across domains. To overcome these limitations, we present DRCap, a data-efficient and flexible zero- shot audio captioning system that requires text-only data for training and can quickly adapt to new domains without additional fine-tuning. DRCap integrates a contrastive language-audio pre-training (CLAP) model and a large language model (LLM) as its backbone. During training, the model predicts the ground-truth caption with a fixed text encoder from CLAP, whereas, during inference, the text encoder is replaced with the audio encoder to generate captions for audio clips in a zero-shot manner. To mitigate the modality gap of the CLAP model, we use both the projection strategy from the encoder side and the retrieval-augmented generation strategy from the decoder side. Specifically, audio embeddings are first projected onto a text embedding support to absorb extensive semantic information within the joint multi-modal space of CLAP. At the same time, similar captions retrieved from a datastore are fed as prompts to instruct the LLM, incorporating external knowledge to take full advantage of its strong generative capability. Conditioned on both the projected CLAP embedding and the retrieved similar captions, the model is able to produce a more accurate and semantically rich textual description. By tailoring the text embedding support and the caption datastore to the target domain, DRCap acquires a robust ability to adapt to new domains in a training-free manner. Experimental results demonstrate that DRCap outperforms all other zero-shot models in in- domain scenarios and achieves state-of-the-art performance in cross- domain scenarios.</font>
-            </td>
-          </tr>
-        </tbody></table>
 
         <!-- <br> -->
 
